@@ -1,0 +1,39 @@
+[build-system]
+requires = ["flit_core>=3.7"]
+build-backend = "flit_core.buildapi"
+
+# project metadata
+[project]
+name = "sphinxcontrib.metadata"
+description = "Extension to add and use file-wide metadata."
+readme = "README.rst"
+license.text = "BSD Zero Clause License"
+requires-python = ">=3.8"
+
+# Classifiers list: https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: Apache License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+]
+dependencies = [
+    "setuptools",  # for pkg_resources
+]
+dynamic = ["version"]
+
+[[project.authors]]
+name = "Benjamin Balder Bach"
+
+[tool.coverage.run]
+source = ["sphinxcontrib.jquery"]
